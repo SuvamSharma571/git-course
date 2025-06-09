@@ -1,2 +1,4 @@
 get the user serice
 process the data
+create an avtaar gor an user
+new for branch 
