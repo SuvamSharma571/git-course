@@ -24,3 +24,27 @@ const myfunct = function (){
     console.log ("Hello world");
 }
 console.log(myfunct())
+
+
+//**************************memories ***************************************
+// stack memory and heap memory
+// Stack - primitive type (Copy milta haai )
+//heap - Non primitive type( reference milta haai )
+
+let myname = "Suvam"
+let another = myname
+
+another = "coding practice"
+console.log(another)
+console.log(myname)
+
+let user = {
+    username : "Suvam",
+    upi:"Suvam@pymbl"
+}
+
+let user1 = user
+console.log(user1)
+user1.upi = "Suvam@sbi.paytm"
+
+console.log(user)
