@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style = "background-color: #212121; color: aquamarine;">
+    <ul class="language">
+        <li>javacript</li>
+    </ul>
+</body>
+<script>
+    function add(params) {
+        const lie = document.createElement('li');
+        lie.innerHTML = `${params}`;
+        document.querySelector('.language').appendChild(lie)
+
+        
+    }
+    add("python")
+    add("ty")
+
+    function addop(params) {
+         const lie = document.createElement('li');
+         lie.appendChild(document.createTextNode(params))
+         document.querySelector('.language').appendChild(lie)
+    }
+    addop("java")
+
+    //edit
+    const second = document.querySelector("li:nth-child(2)")
+    second.innerHTML = 'mojo'
+    const neww = document.createElement('li')
+    neww.textContent = "dubu"
+    second.replaceWith(neww)
+
+
+    const seco = document.querySelector("li:first-child")
+    seco.outerHTML = '<li>typp</li>'
+
+    //remove
+    const laa = document.querySelector("li:last-child")
+    laa.remove()
+    </script>
+</html>
