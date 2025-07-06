@@ -1,0 +1,32 @@
+const user ={
+    username :"suvam",
+    logincount :7,
+    signedin : true,
+
+    getUserDetails : function(){
+        console.log ("Got user details from the database")
+    }
+}
+console.log(user.username)
+console.log(user.getUserDetails())
+
+
+
+function u1 (uname,logincunt, isloogedin)
+{
+    this.uname = uname
+    this.logincunt = logincunt
+    this.isloogedin = isloogedin
+
+    return this
+}
+
+const uu = new u1("hgj",9,true)
+const uu2 = new u1("hjhgfgj",19,false)
+// console.log(uu);
+// console.log(uu2);
+// new keywoed generate a new object blank 
+//constructor function call for new keyword 
+// injected into the this 
+//then the value is passed
+console.log(uu.constructor)
