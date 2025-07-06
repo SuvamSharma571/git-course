@@ -6,6 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    jksdnjsnckjcn
+    <h1>chai coding</h1>
+    <button id="stop">Stop</button>
 </body>
+<script>
+    const sathitesh = () => {
+        console.log("hitess"); 
+    }
+    const changetest = () => {
+        document.querySelector('h1').innerHTML = "best js series"
+    }
+   const changeme =  setTimeout(changetest , 2000)
+   document.querySelector('#stop').addEventListener('click',() => {
+     clearTimeout(changeme)
+     console.log("Stopped");
+     
+   })
+        </script>
+
 </html>

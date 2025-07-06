@@ -3,12 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>htmlEvents
-
-    </title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>chai aur code</h1>
-    <button id="stop">stop</button>
+    <h1>chai coding</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+
 </body>
+<script>
+    const saydate = function (sss){
+        console.log(sss,Date.now())
+    }
+   let ing;
+    document.querySelector('#start').addEventListener('click',() =>{
+        console.log("started")
+        ing = setInterval(saydate,1000,"helmolo")
+    })
+    document.querySelector('#stop').addEventListener('click',() =>{
+        clearInterval(ing)
+        console.log("stopped")
+    })
+        </script> 
+
 </html>
